@@ -116,7 +116,7 @@
   prerequisites:
     Выполнен вход на сайт с логина tanuki. Открыта главная страница.
   test-data:
-    -
+    Отсуствуют
   steps:
     - Нажимаем кнопку "Создать игру"
     - Выбираем игру с ботом 
@@ -131,7 +131,7 @@
   prerequisites:
     Выполнен вход на сайт с логина tanuki. Открыта главная страница.
   test-data:
-    -
+    Отсутсвуют
   steps:
     - Нажимаем кнопку "Создать игру" 
     - Выбираем тип игры "С другим пользователем"
@@ -146,7 +146,7 @@
   prerequisites:
     Выполнен вход на сайт с логина tanuki. Открыта страница создания новой игры.
   test-data:
-    -
+    Без данных
   steps:
     - Выбираем тип игры "С другим пользователем"
     - Нажимаем кнопку "Создать игру"
@@ -160,7 +160,7 @@
   prerequisites:
     Выполнен вход на сайт с логина tanuki. Открыта страница создания новой игры. 
   test-data:
-    -
+    Без данных
   steps:
     - Выбираем тип игры "С другом"
     - Выбираем существующего пользователя bubu  
@@ -175,7 +175,7 @@
   prerequisites:
     В браузере Firefox выполнен вход на сайт с логина tanuki и создана новая игра с другим пользователем. В браузере Google Chrome выполенен вход с профиля bubu и открыта главная страница.
   test-data:
-    -
+    Без данных
   steps:
     - Смотрим статус игры
   expected-result:
@@ -188,7 +188,7 @@
   prerequisites:
     В браузере Firefox выполнен вход на сайт с логина tanuki и создана новая игра с другим пользователем. В браузере Google Chrome выполенен вход с профиля bubu и открыта главная страница.
   test-data:
-    -
+    Без данных
   steps:
     - С профиля bubu нажимаем кнопку "Подключиться к игре"
   expected-result:
@@ -201,7 +201,7 @@
   prerequisites:
     Открыта страница игрового поля
   test-data:
-    -
+    Без данных
   steps:
     - Смотрим наличие двух редакторов
   expected-result:
@@ -214,7 +214,7 @@
   prerequisites:
     Выполнен вход с логина tanuki. Открыта страница игрового поля.
   test-data:
-    -
+    Без данных
   steps:
     - Нажимаем кнопку, вызывающую подсказку
   expected-result:
@@ -227,7 +227,7 @@
   prerequisites:
     Выполнен вход с логина tanuki. Открыта страница игрового поля.
   test-data:
-    -
+    Без данных
   steps:
     - Нажимаем кнопку выбора языка программирования
     - Выбираем язык Phyton
@@ -241,7 +241,7 @@
   prerequisites:
     В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu.
   test-data:
-    -
+    Код = 1()1
   steps:
     - С профиля tanuki вводим код
   expected-result:
@@ -254,7 +254,7 @@
   prerequisites:
     В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu. 
   test-data:
-    -
+    Без данных
   steps:
     - Через вкладку Network в DevTools выбираем режим Offline для игрока tanuki
     - Перезагружаем страницу
@@ -269,7 +269,7 @@
   prerequisites:
     В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu.
   test-data:
-    -
+    Код = 1111  
   steps:
     - Через вкладку Network в DevTools выбираем режим Offline для игрока tanuki
     - С профиля игрока bubu вводим код в редакторе  
@@ -281,9 +281,9 @@
   requirement:
     Когда игрок находит верное решение, обоим игрокам должно высветиться модальное окно с указанием победителя в этой игре
   prerequisites:
-    В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu.
+    В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu. Задача "split_names".
   test-data:
-    -
+    Код = names.map(name => name.split(' ')).map(([first, last]) => ({ first, last }));
   steps:
     - С профиля игрока tanuki вводим правильное решение задачи
   expected-result:
@@ -296,7 +296,7 @@
   prerequisites:
     В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu. Игрок tanuki ввел верное решение задачи.
   test-data:
-    -
+    Без данных
   steps:
     - Нажимаем кнопку "exit"
   expected-result:
@@ -307,9 +307,9 @@
   requirement:
     Игрок должен иметь возможность доиграть до конца в случае победы сопернка и его выхода из игры
   prerequisites:
-    В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu. Игрок tanuki выиграл и вышел из игры. 
+    В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu. Задача "split_names". Игрок tanuki выиграл и вышел из игры. 
   test-data:
-    -
+    Код = names.map(name => name.split(' ')).map(([first, last]) => ({ first, last }));
   steps:
     - Игрок bubu вводит в редакторе код
   expected-result:
@@ -336,7 +336,7 @@
   prerequisites:
     В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Открыта страница игры между tanuki и bubu. Время игры истекло.
   test-data:
-    -
+    Без данных
   steps:
     - Смотрим сообщение об отстуствии победителя 
   expected-result:
@@ -349,7 +349,7 @@
   prerequisites:
     В браузере Firefox выполнен вход с логина tanuki, в Google Chrome - с логина bubu. Игра между tanuki и bubu закончена, игрок tanuki вышел из игры.
   test-data:
-    -
+    Без данных
   steps:
     - Игрок bubu нажимает кнопку "exit"
   expected-result:
